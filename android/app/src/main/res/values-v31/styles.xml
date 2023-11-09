@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<resources>-->
+<!--    &lt;!&ndash; Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off &ndash;&gt;-->
+<!--    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">-->
+
+<!--        <item name="android:forceDarkAllowed">false</item>-->
+<!--        <item name="android:windowFullscreen">false</item>-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">false</item>-->
+<!--        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>-->
+<!--    </style>-->
+
+<!--    &lt;!&ndash; Theme applied to the Android Window as soon as the process has started.-->
+<!--         This theme determines the color of the Android Window while your-->
+<!--         Flutter UI initializes, as well as behind your Flutter UI while its-->
+<!--         running.-->
+<!--         -->
+<!--         This Theme is only used starting with V2 of Flutter's Android embedding. &ndash;&gt;-->
+<!--    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">-->
+<!--        <item name="android:windowBackground">?android:colorBackground</item>-->
+<!--    </style>-->
+<!--</resources>-->
+
+<resources>
+
+<!-- Splash Screen Theme (Android 12+) -->
+<style name="LaunchTheme" parent="Theme.SplashScreen.IconBackground">
+    <item name="windowSplashScreenBackground">#FFFFFF</item>
+<!--    <item name="windowSplashScreenAnimatedIcon">@drawable/anim_battery</item>-->
+    <item name="windowSplashScreenAnimationDuration">1000</item>
+    <item name="windowSplashScreenIconBackgroundColor">#F7EDD6</item>
+    <item name="android:windowSplashScreenBrandingImage">@drawable/img_1</item>
+    <item name="postSplashScreenTheme">@style/LaunchTheme</item>
+</style>
+
+</resources>
+<!--<resources>-->
+
+<!--&lt;!&ndash; Splash Screen Theme (Android 12+) &ndash;&gt;-->
+<!--<style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">-->
+<!--    <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>-->
+<!--    <item name="windowSplashScreenAnimatedIcon">@drawable/anim_brush</item>-->
+<!--    <item name="windowSplashScreenAnimationDuration">1000</item>-->
+<!--    <item name="windowSplashScreenIconBackgroundColor">@color/white</item>-->
+<!--    <item name="android:windowSplashScreenBrandingImage">@drawable/splash_branding_image</item>-->
+<!--    <item name="postSplashScreenTheme">@style/AppTheme</item>-->
+<!--</style>-->
+
+<!--</resources>-->
